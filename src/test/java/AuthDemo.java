@@ -14,7 +14,7 @@ public class AuthDemo {
     public void basicAuthTest(){
         //blacklist headers
         Response response = given()
-                .header("Authorization","Basic cG9zdG1hbjpwYXNzd29yZA==")
+                .header("Authorization","Basic value")
                 .log()
                 .all()
                 .get("https://postman-echo.com/basic-auth");
@@ -25,7 +25,7 @@ public class AuthDemo {
     @Test
     public void getAllWorkspace(){
                 given()
-                        .header("X-Api-Key","PMAK-6126f517539a6600470f5954-7e16b29a34abd3dea3ffc200c57443127d")
+                        .header("X-Api-Key","value")
                         .log()
                         .all()
                         .get("https://api.getpostman.com/workspaces")
@@ -37,7 +37,7 @@ public class AuthDemo {
     @Test
     public void getRepositories(){
         given()
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer token")
                 .config(RestAssuredConfig.config().logConfig(LogConfig.logConfig().blacklistHeader("Authorization")))
                 .queryParam("per_page",1)
                 .log()
@@ -55,7 +55,7 @@ public class AuthDemo {
 
         Response response = given()
                 .config(RestAssuredConfig.config().logConfig(LogConfig.logConfig().blacklistHeader("Authorization","Content-Type")))
-                .header("Authorization","Basic dGVzdGluZ21pbmlieXRlczpBbWJhdHR1cjEh")
+                .header("Authorization","Basic token")
                 .header("Content-Type","application/json")
                 .log()
                 .all()
