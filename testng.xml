@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+   <listeners>
+        <listener class-name="com.tmb.listeners.TestListener"></listener>
+    </listeners>
+    <test parallel="methods" thread-count="6" name="C:/Users/testi/selenium-project/APIAugustAutomationFramework">
+        <classes>
+            <!--<class name="com.tmb.tests.GetTests">
+                <methods>
+                    <include name="getEmployeesDetails" />
+                    <include name="getEmployeeDetail" />
+                </methods>
+            </class>
+            <class name="com.tmb.tests.PostTests">
+                <methods>
+                    <include name="postTestUsingPojo" />
+                    <include name="postRequestUsingExternalFile" />
+                    <include name="postRequestUsingExternalFile1" />
+                </methods>
+            </class>-->
+            <class name="com.tmb.tests.AssignmentTests">
+                <methods>
+                    <include name="assignmentTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

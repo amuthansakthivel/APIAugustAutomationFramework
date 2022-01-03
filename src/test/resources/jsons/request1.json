@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "project":
+    {
+      "key": "KEY"
+    },
+    "summary": "sdfwsfsf",
+    "description": "sdfsfdsfsfs",
+    "issuetype": {
+      "name": "Task"
+    }
+  }
+}
